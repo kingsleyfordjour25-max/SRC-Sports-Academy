@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Book a training session at SRC Sports Academy.">
+
+    <title>Book a Session | SRC Sports Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+
+<header>
+
+    <div class="logo">
+        <h2>SRC <span>SPORTS ACADEMY</span></h2>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">☰</button>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="booking.html" class="booking-btn">Book a Session</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- BOOKING PAGE BANNER -->
+
+<section class="page-banner">
+
+    <h1>Book a Training Session</h1>
+
+    <p>
+        Take the next step in your sporting journey.
+        Choose your preferred activity, select a suitable date
+        and book your training session with SRC Sports Academy.
+    </p>
+
+</section>
+<!-- BOOKING INTRODUCTION -->
+
+<section class="about-section">
+
+    <h2>Schedule Your Training</h2>
+
+    <p>
+        At SRC Sports Academy, we believe every athlete deserves
+        the opportunity to develop their abilities through proper
+        training and guidance. Our booking system makes it easy
+        for you to schedule a session in your preferred sporting
+        discipline.
+
+    </p>
+
+    <p>
+        Whether you are a beginner exploring a new sport or an
+        experienced athlete looking to improve your performance,
+        simply complete the booking form below. Our team will
+        review your request and get in touch with you to confirm
+        the details of your session.
+    </p>
+
+</section>
+<!-- ONLINE BOOKING FORM -->
+
+<section class="registration-section">
+
+    <h2>Training Session Booking Form</h2>
+
+    <p>Complete the form below to request your training session.</p>
+
+    <form id="bookingForm">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="bookingName">Full Name</label>
+                <input type="text" id="bookingName" name="bookingName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingEmail">Email Address</label>
+                <input type="email" id="bookingEmail" name="bookingEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingPhone">Phone Number</label>
+                <input type="tel" id="bookingPhone" name="bookingPhone" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Training Details</legend>
+
+            <div class="form-group">
+                <label for="bookingSport">Choose a Sport</label>
+
+                <select id="bookingSport" name="bookingSport" required>
+                    <option value="">Select a sporting activity</option>
+                    <option value="Football">Football</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Wrestling">Wrestling</option>
+                    <option value="Taekwondo">Taekwondo</option>
+                    <option value="Judo">Judo</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Ballet">Ballet</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Handball">Handball</option>
+                    <option value="Gymnastics">Gymnastics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingDate">Preferred Training Date</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingTime">Preferred Training Time</label>
+                <input type="time" id="bookingTime" name="bookingTime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingExperience">Experience Level</label>
+
+                <select id="bookingExperience" name="bookingExperience" required>
+                    <option value="">Select your experience level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingMessage">Additional Information</label>
+                <textarea id="bookingMessage" name="bookingMessage"
+                          rows="5" placeholder="Tell us anything else we should know."></textarea>
+            </div>
+
+        </fieldset>
+
+        <button type="submit" class="primary-btn">Submit Booking Request</button>
+
+        <p id="bookingMessageStatus" aria-live="polite"></p>
+
+    </form>
+
+</section>
+<!-- WEBSITE FOOTER -->
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>SRC <span>SPORTS ACADEMY</span></h2>
+            <p>
+                Developing talents, building champions and promoting
+                excellence through sports.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="activities.html">Activities</a>
+            <a href="blog.html">Blog</a>
+            <a href="events.html">Events</a>
+            <a href="register.html">Register</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: kingsleyfordjour25@gmail.com</p>
+            <p>Location: Pentecost University, Ghana</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

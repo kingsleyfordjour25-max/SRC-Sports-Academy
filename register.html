@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Register with SRC Sports Academy and begin your sporting journey.">
+
+    <title>Register | SRC Sports Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- HEADER SECTION -->
+<header>
+
+    <div class="logo">
+        <h2>SRC <span>SPORTS ACADEMY</span></h2>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="booking.html" class="booking-btn">Book a Session</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- PAGE BANNER -->
+<section class="page-banner">
+
+    <h1>Join SRC Sports Academy</h1>
+
+    <p>Take the first step towards discovering your talent and achieving sporting excellence.</p>
+
+</section>
+<!-- REGISTRATION INTRODUCTION -->
+<section class="about-section">
+
+    <h2>Start Your Sporting Journey Today</h2>
+
+    <p>
+        Are you passionate about sports and looking for an opportunity
+        to develop your abilities? SRC Sports Academy welcomes individuals
+        who are ready to learn, improve and pursue their sporting ambitions.
+        Complete the registration form below to take your first step
+        towards becoming part of our sporting community.
+    </p>
+
+</section>
+<!-- REGISTRATION FORM -->
+<section class="registration-section">
+
+    <h2>Student Registration Form</h2>
+
+    <p>Please complete all the required fields below.</p>
+
+    <form id="registrationForm">
+
+        <!-- PERSONAL INFORMATION -->
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName"
+                       placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName"
+                       placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- CONTACT INFORMATION -->
+        <fieldset>
+
+            <legend>Contact Information</legend>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Residential Address</label>
+                <textarea id="address" name="address"
+                          placeholder="Enter your residential address"
+                          rows="3" required></textarea>
+            </div>
+
+        </fieldset>
+
+        <!-- SPORTS INFORMATION -->
+        <fieldset>
+
+            <legend>Sports Information</legend>
+
+            <div class="form-group">
+                <label for="sport">Preferred Sporting Activity</label>
+
+                <select id="sport" name="sport" required>
+                    <option value="">Select a Sport</option>
+                    <option value="Football">Football</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Wrestling">Wrestling</option>
+                    <option value="Taekwondo">Taekwondo</option>
+                    <option value="Judo">Judo</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Ballet">Ballet</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Handball">Handball</option>
+                    <option value="Gymnastics">Gymnastics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Previous Sporting Experience</label>
+
+                <select id="experience" name="experience" required>
+                    <option value="">Select Experience Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- EMERGENCY CONTACT -->
+        <fieldset>
+
+            <legend>Emergency Contact</legend>
+
+            <div class="form-group">
+                <label for="emergencyName">Emergency Contact Name</label>
+                <input type="text" id="emergencyName" name="emergencyName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergencyPhone">Emergency Contact Number</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="relationship">Relationship</label>
+                <input type="text" id="relationship" name="relationship"
+                       placeholder="e.g. Parent, Guardian or Relative" required>
+            </div>
+
+        </fieldset>
+
+        <!-- TERMS AND CONDITIONS -->
+        <div class="form-group">
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I confirm that the information provided is accurate
+                and agree to the academy's terms and conditions.
+            </label>
+
+        </div>
+
+        <button type="submit" class="primary-btn">
+            Submit Registration
+        </button>
+
+        <p id="registrationMessage" aria-live="polite"></p>
+
+    </form>
+
+</section>
+<!-- WEBSITE FOOTER -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>SRC <span>SPORTS ACADEMY</span></h2>
+            <p>Developing talents, building champions and promoting excellence through sports.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="activities.html">Activities</a>
+            <a href="blog.html">Blog</a>
+            <a href="events.html">Events</a>
+            <a href="booking.html">Book Online</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: kingsleyfordjour25@gmail.com</p>
+            <p>Location: Pentecost University, Ghana</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
